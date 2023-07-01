@@ -19,14 +19,15 @@
             flex: 1;
         }
         .footer {
-            height: 100px;
+            height: 130px;
             background-color: black;
             padding-top: 15px;
+            margin-bottom: 0%;
         }
         .item{
             background-color: rgb(16, 121, 159);
             margin-left: 20px;
-            border-radius: 50px;
+            border-radius: 40px;
             width: 200px;
             text-align: center;
             font-weight: 700;
@@ -39,6 +40,26 @@
             display: flex;
             justify-content: space-between;
         }
+        .form_email{
+            width: 250px;
+            height: 30px;
+            border-radius: 40px;
+            border: none;
+            outline: none;
+            padding: 20px;
+        }
+        .form_button{
+            width: 100px;
+            height: 40px;
+            border-radius: 40px;
+            border: none;
+            outline: none;
+            background-color: rgb(16, 121, 159);
+            color: white;
+            font-weight: 700;
+            
+        }
+        
     </style>
 </head>
 <body>
@@ -90,9 +111,16 @@
     <footer class="footer text-white">
         <div class="divi container">
             <img width="25%" height="25%" src="https://lampeducationtrust.com/wp-content/uploads/2022/08/Lamp-Educational-and-Charitable-Trust-2-1024x272.png" class=" image_foot attachment-large size-large wp-image-2060" alt="Lamp Logo" decoding="async" loading="lazy" srcset="https://lampeducationtrust.com/wp-content/uploads/2022/08/Lamp-Educational-and-Charitable-Trust-2-1024x272.png 1024w, https://lampeducationtrust.com/wp-content/uploads/2022/08/Lamp-Educational-and-Charitable-Trust-2-300x80.png 300w, https://lampeducationtrust.com/wp-content/uploads/2022/08/Lamp-Educational-and-Charitable-Trust-2-768x204.png 768w, https://lampeducationtrust.com/wp-content/uploads/2022/08/Lamp-Educational-and-Charitable-Trust-2-600x160.png 600w, https://lampeducationtrust.com/wp-content/uploads/2022/08/Lamp-Educational-and-Charitable-Trust-2.png 1259w" >
-            <div>
-                <p class="footer_contact">Contact Info</p>
-                <p class="footer_contact2">+91 9008701080</p>
+            <div class="footer_contact">
+                <p class="">Contact Info:</p>
+                <p class="">+91 9008701080 <br>help@lampeducationtrust.com </p>
+            </div>
+            <div class="footer_magazine">
+                <p>Subscribe to our Quaterly Magazine</p>
+                <form action="">
+                    <input type="text" class="form_email" placeholder="Enter your email">
+                    <button class="form_button" type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
     </footer>
